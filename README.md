@@ -86,6 +86,7 @@ The API provides endpoints under `/api/users` and `/api/courses`. Use tools like
     "email": "john@example.com"
   }
   ```
+  ![Create User Screenshot](./images/Post_User.png)
 
 - Create a course:
   ```json
@@ -96,6 +97,7 @@ The API provides endpoints under `/api/users` and `/api/courses`. Use tools like
     "instructor": "Jane Smith"
   }
   ```
+  ![Create Course Screenshot](./images/Post_Course.png)
 
 - Add a review:
   ```json
@@ -106,6 +108,43 @@ The API provides endpoints under `/api/users` and `/api/courses`. Use tools like
     "user": "userId"
   }
   ```
+  ![Add Review Screenshot](./images/Post_Review.png)
+
+- Get all users:
+  ```
+  GET /api/users
+  ```
+  ![Get All Users Screenshot](./images/GetAllUsers.png)
+
+- Get user by ID:
+  ```
+  GET /api/users/:id
+  ```
+  ![Get User by ID Screenshot](./images/Get_UserById.png)
+
+- Get all courses:
+  ```
+  GET /api/courses
+  ```
+  ![Get All Courses Screenshot](./images/Get_AllCourse.png)
+
+- Get course by ID:
+  ```
+  GET /api/courses/:id
+  ```
+  ![Get Course by ID Screenshot](./images/Get_CourseBYId.png)
+
+- Get students enrolled in a course:
+  ```
+  GET /api/courses/:courseId/students
+  ```
+  ![Get Course Students Screenshot](./images/GetCourseStudent.png)
+
+- Get reviews for a course:
+  ```
+  GET /api/courses/:courseId/reviews
+  ```
+  ![Get Reviews Screenshot](./images/Get_Review.png)
 
 ## Project Structure
 
