@@ -82,8 +82,8 @@ The API provides endpoints under `/api/users` and `/api/courses`. Use tools like
   ```json
   POST /api/users
   {
-    "username": "john_doe",
-    "email": "john@example.com"
+    "username": "Raed ahmed",
+    "email": "tatata@gmail.com"
   }
   ```
   ![Create User Screenshot](./images/Post_User.png)
@@ -92,9 +92,9 @@ The API provides endpoints under `/api/users` and `/api/courses`. Use tools like
   ```json
   POST /api/courses
   {
-    "title": "Introduction to JavaScript",
-    "description": "Learn the basics of JavaScript",
-    "instructor": "Jane Smith"
+    "title": "Introduction to Machine Learning",
+    "description": "A beginner-friendly course that covers supervised an unsupervised learning",
+    "instructor": "Dr. John Smith"
   }
   ```
   ![Create Course Screenshot](./images/Post_Course.png)
@@ -103,9 +103,10 @@ The API provides endpoints under `/api/users` and `/api/courses`. Use tools like
   ```json
   POST /api/courses/:courseId/reviews
   {
+    "user": "userId",
     "rating": 5,
-    "comment": "Great course!",
-    "user": "userId"
+    "comment": "Excellent cours, bien expliqué et structuré !"
+    
   }
   ```
   ![Add Review Screenshot](./images/Post_Review.png)
